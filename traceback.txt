@@ -1,0 +1,21 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 13, in script
+    e "Changing things to practice."
+Exception: Sayer 'e' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 13, in script
+    e "Changing things to practice."
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 500, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'e' is not defined.
+
+Linux-3.16.0-51-generic-x86_64-with-debian-jessie-sid
+Ren'Py 6.99.7.858
+Napster-Grokster 0.0
