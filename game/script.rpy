@@ -8,6 +8,8 @@ image desk = "messydesk.jpg"
 
 image judge = "judge.png"
 image boss = "boss.png"
+image tswift = "tswift.png"
+image lawStudent = "lawStudent.png"
 
 define i = Character('Me', color="#c8c8ff")
                                        
