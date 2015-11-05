@@ -1,4 +1,4 @@
-Mon Nov  2 21:11:25 2015
+Tue Nov  3 20:20:22 2015
 Linux-3.16.0-51-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
  
@@ -17,14 +17,14 @@ Index archives took 0.00s
 Dump and make backups. took 0.02s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.27s
+Creating interface object took 0.25s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.03s
+Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -366,46 +366,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.759833097458s
+Total time until interface ready: 0.697381973267s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.015617 seconds.
-- Frame drawn at 0.032221 seconds.
-- Frame drawn at 0.049437 seconds.
-- Frame drawn at 0.065398 seconds.
-- 0.065398 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.05s
-Running _start took 0.00s
+- Frame drawn at 0.016606 seconds.
+- Frame drawn at 0.032961 seconds.
+- Frame drawn at 0.049941 seconds.
+- Frame drawn at 0.066374 seconds.
+- 0.066374 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.02s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.02s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.05s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.03s
 Running _start took 0.00s
