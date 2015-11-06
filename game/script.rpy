@@ -18,8 +18,16 @@ image lawBook = "lawbook.png"
 
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+image judy = "judgejudy.png"
+=======
+>>>>>>> origin/master
+>>>>>>> 8dec098cab0826779ba95012acdbdf5388e4a16c
 
+>>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi')
                                        
@@ -50,7 +58,7 @@ label start:
     
     i "Guess I should start here!"
     
-    show judge
+    show judy
     
     "Judge Name" "Well what did you want to ask me?"
     
