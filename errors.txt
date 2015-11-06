@@ -2,6 +2,28 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 88: indentation mismatch.
+File "game/script.rpy", line 13: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/script.rpy", line 18: expected statement.
+    =======
+          ^
+
+File "game/script.rpy", line 21: expected statement.
+    <<<<<<< HEAD
+                ^
+
+File "game/script.rpy", line 23: expected statement.
+    =======
+          ^
+
+File "game/script.rpy", line 24: expected statement.
+    >>>>>>> origin/master
+                         ^
+
+File "game/script.rpy", line 26: expected statement.
+    >>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
+                                                    ^
 
 Ren'Py Version: Ren'Py 6.99.7.858

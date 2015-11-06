@@ -10,20 +10,15 @@ image dorm="dorm.jpg"
 
 image judge = "judge.png"
 image boss = "boss.png"
-<<<<<<< HEAD
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
 
-=======
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
-<<<<<<< HEAD
-image judy = "judgejudy.png"
-=======
->>>>>>> origin/master
 
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
+image judy = "judgejudy.png"
+
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi')
                                        
