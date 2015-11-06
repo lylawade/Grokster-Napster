@@ -101,7 +101,7 @@ menu:
         
 
 label FairUse:
-<<<<<<< HEAD
+
     k "Fair Use is based on four main principles " 
   
     jump KurumiMenu
@@ -109,13 +109,12 @@ label FairUse:
 label BetaMax:
     k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
   
-=======
+
     k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
 label BetaMax:
     k "The court found that the Betamax had many non-infringing use potential (such as educational purposes)."
->>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
     jump KurumiMenu
 
 label SearchBooksScene:
@@ -164,11 +163,16 @@ menu:
     "Do you know what happened to Napster?":    
         jump QuestionFour
     "What do you use now instead of Napster?":
-        jump QuestionFive  
-        
-label QuestionOne:    
-    m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
-    jump Questionaaire
+        jump QuestionFive    
+label QuestionOne:
+
+    
+         jump Questionaaire
+  # jump Grokster        
+
+m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
+jump Questionaaire
+
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -210,6 +214,7 @@ label NapsterConclusion:
     jump Grokster
     
 
+
 label Grokster: 
         scene weke
         i "Hmm this looks like a good website"
@@ -225,7 +230,20 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+ #       jump Opinions        
         
+        
+#label Opinions:
+#menu: 
+#        "Justice Souter": 
+        
+        
+        
+        
+        
+        
+        
+    
 
     
     
