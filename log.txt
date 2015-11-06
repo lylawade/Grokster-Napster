@@ -1,75 +1,35 @@
-<<<<<<< HEAD
-Thu Nov  5 19:40:51 2015
+Thu Nov  5 20:34:18 2015
 Linux-3.19.0-31-generic-x86_64-with-debian-jessie-sid
-=======
-<<<<<<< HEAD
-Thu Nov 05 19:21:22 2015
-Windows-8-6.2.9200
-Ren'Py 6.99.7.858
- 
-
-Bootstrap to the start of init.init took 0.07s
-Early init took 0.02s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.11s
-Loading persistent took 0.01s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Example John\\AppData\\Roaming/RenPy/backups\\Grokster-Napster':
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Creating interface object took 0.02s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.05s
-=======
-Tue Nov  3 20:20:22 2015
-Linux-3.16.0-51-generic-x86_64-with-debian-jessie-sid
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
 Ren'Py 6.99.7.858
  
 
 Bootstrap to the start of init.init took 0.09s
 Early init took 0.01s
-Loader init took 0.00s
+Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.05s
+Loading script took 0.09s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.07s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+Backing up script files to '/home/lyla/.renpy/backups/Grokster-Napster':
 Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.09s
+Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-<<<<<<< HEAD
-Prepare screens took 0.05s
-=======
-Prepare screens took 0.02s
->>>>>>> origin/master
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-<<<<<<< HEAD
 Interface start took 0.01s
 
 Windowed mode.
@@ -78,35 +38,6 @@ Vendor: 'Intel Open Source Technology Center'
 Renderer: 'Mesa DRI Intel(R) HD Graphics 5300 (Broadwell GT2) '
 Version: '3.0 Mesa 10.5.9'
 Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680, 65280, 255, 0), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
-=======
-Interface start took 0.00s
-<<<<<<< HEAD
-Couldn't import angle renderer:
-Traceback (most recent call last):
-  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1641, in make_draw
-    __import__(mod)
-  File "renpy/angle/gltexture.pxd", line 28, in init renpy.angle.gldraw (gen\renpy.angle.gldraw.c:21774)
-    cdef class TextureCore:
-  File "renpy/angle/gltexture.pyx", line 1, in init renpy.angle.gltexture (gen\renpy.angle.gltexture.c:18376)
-    # This file was automatically generated from renpy/gl/gltexture.pyx
-ImportError: No module named gl
-Unknown renderer: angle
-=======
->>>>>>> origin/master
-
-Windowed mode.
-Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
-Vendor: 'NVIDIA Corporation'
-<<<<<<< HEAD
-Renderer: 'GeForce GT 650M/PCIe/SSE2'
-Version: '4.5.0 NVIDIA 347.88'
-Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
-=======
-Renderer: 'GeForce GTX 770/PCIe/SSE2'
-Version: '4.5.0 NVIDIA 346.96'
-Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680, 65280, 255, 0), 'current_h': 1080, 'current_w': 5760, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
->>>>>>> origin/master
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
 Extensions:
     
     GL_3DFX_texture_compression_FXT1
@@ -287,15 +218,7 @@ Extensions:
     GL_EXT_transform_feedback
     GL_EXT_vertex_array
     GL_EXT_vertex_array_bgra
-<<<<<<< HEAD
     GL_IBM_multimode_draw_arrays
-=======
-    GL_EXT_vertex_attrib_64bit
-<<<<<<< HEAD
-=======
-    GL_EXT_x11_sync_object
->>>>>>> origin/master
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
     GL_IBM_rasterpos_clip
     GL_IBM_texture_mirrored_repeat
     GL_INGR_blend_func_separate
@@ -313,49 +236,15 @@ Extensions:
     GL_NV_texgen_reflection
     GL_NV_texture_env_combine4
     GL_NV_texture_rectangle
-<<<<<<< HEAD
     GL_OES_EGL_image
     GL_OES_read_format
-=======
-    GL_NV_texture_shader
-    GL_NV_texture_shader2
-    GL_NV_texture_shader3
-    GL_NV_transform_feedback
-    GL_NV_transform_feedback2
-    GL_NV_uniform_buffer_unified_memory
-<<<<<<< HEAD
-=======
-    GL_NV_vdpau_interop
->>>>>>> origin/master
-    GL_NV_vertex_array_range
-    GL_NV_vertex_array_range2
-    GL_NV_vertex_attrib_integer_64bit
-    GL_NV_vertex_buffer_unified_memory
-    GL_NV_vertex_program
-    GL_NV_vertex_program1_1
-    GL_NV_vertex_program2
-    GL_NV_vertex_program2_option
-    GL_NV_vertex_program3
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
     GL_S3_s3tc
     GL_SGIS_generate_mipmap
     GL_SGIS_texture_border_clamp
     GL_SGIS_texture_edge_clamp
     GL_SGIS_texture_lod
-<<<<<<< HEAD
     GL_SUN_multi_draw_arrays
 Number of texture units: 8
-=======
-    GL_SGIX_depth_texture
-    GL_SGIX_shadow
-    GL_SUN_slice_accum
-<<<<<<< HEAD
-    GL_WIN_swap_hint
-    WGL_EXT_swap_control
-=======
->>>>>>> origin/master
-Number of texture units: 4
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
 Using shader environment.
 Using copy RTT.
 Using gl renderer.
@@ -367,28 +256,14 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-<<<<<<< HEAD
-Total time until interface ready: 0.675693035126s
-=======
-<<<<<<< HEAD
-Total time until interface ready: 0.891999959946s
+Total time until interface ready: 0.817764043808s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.101000 seconds.
-- Frame drawn at 0.103000 seconds.
-- Frame drawn at 0.116000 seconds.
-- Frame drawn at 0.133000 seconds.
-- 0.133000 seconds to render 5 frames.
-=======
-Total time until interface ready: 0.697381973267s
->>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016280 seconds.
-- Frame drawn at 0.028940 seconds.
-- Frame drawn at 0.045399 seconds.
-- Frame drawn at 0.061340 seconds.
-- 0.061340 seconds to render 5 frames.
+- Frame drawn at 0.007239 seconds.
+- Frame drawn at 0.019757 seconds.
+- Frame drawn at 0.035689 seconds.
+- Frame drawn at 0.052743 seconds.
+- 0.052743 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
@@ -396,4 +271,3 @@ Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.05s
 Running _start took 0.00s
->>>>>>> origin/master
