@@ -32,7 +32,8 @@ image makina2 = "makina2.png"
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
-                                       
+
+                           
 label start:
     play music "Shirobako OST Ending 2- Platinum Jet Instrumental.mp3"
     
@@ -100,11 +101,21 @@ menu:
         
 
 label FairUse:
+<<<<<<< HEAD
+    k "Fair Use is based on four main principles " 
+  
+    jump KurumiMenu
+
+label BetaMax:
+    k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
+  
+=======
     k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
 label BetaMax:
     k "The court found that the Betamax had many non-infringing use potential (such as educational purposes)."
+>>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
     jump KurumiMenu
 
 label SearchBooksScene:
@@ -153,8 +164,14 @@ menu:
     "Do you know what happened to Napster?":    
         jump QuestionFour
     "What do you use now instead of Napster?":
+<<<<<<< HEAD
         jump QuestionFive    
 label QuestionOne:   
+=======
+        jump QuestionFive  
+        
+label QuestionOne:    
+>>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
 
@@ -196,6 +213,10 @@ label NapsterConclusion:
     "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
+<<<<<<< HEAD
+=======
+    
+>>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
 
 label Grokster: 
         scene weke
@@ -212,6 +233,7 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+<<<<<<< HEAD
         jump Opinions        
         
         
@@ -257,4 +279,16 @@ label Breyer:
         jump Opinions
         
 
+=======
+        
+
+    
+    
+label endScene:
+scene desk
+
+            
+
+
+>>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
     

@@ -1,13 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< HEAD
   File "game/script.rpy", line 254, in script
     "Even though only 10% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
 TypeError: %o format: a number is required, not TagQuotingDict
+=======
+<<<<<<< HEAD
+  File "game/script.rpy", line 186, in script
+    python:
+  File "game/script.rpy", line 192, in <module>
+    renpy.say(i, "%s" %(x))
+Exception: Can't add displayable during init phase.
+=======
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+ScriptError: could not find label 'dormRoomScene'.
+>>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
+>>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
   File "game/script.rpy", line 254, in script
     "Even though only 10% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
   File "/home/sharbesh/Documents/Fall 2015/306/renpy-6.99.7-sdk/renpy/ast.py", line 603, in execute
@@ -15,6 +30,37 @@ Full traceback:
   File "/home/sharbesh/Documents/Fall 2015/306/renpy-6.99.7-sdk/renpy/exports.py", line 1028, in say
     what = what % tag_quoting_dict
 TypeError: %o format: a number is required, not TagQuotingDict
+=======
+<<<<<<< HEAD
+  File "game/script.rpy", line 186, in script
+    python:
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\python.py", line 1460, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 192, in <module>
+    renpy.say(i, "%s" %(x))
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\exports.py", line 1036, in say
+    who(what, interact=interact)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 429, in display_say
+    behavior = renpy.ui.saybehavior(allow_dismiss=renpy.config.say_allow_dismiss)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ui.py", line 431, in __call__
+    raise Exception("Can't add displayable during init phase.")
+Exception: Can't add displayable during init phase.
+=======
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 1512, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'dormRoomScene'.
+>>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
+>>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
 
 Linux-3.13.0-46-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
