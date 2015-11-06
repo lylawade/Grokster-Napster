@@ -44,13 +44,13 @@ init -1 python hide:
         ## Color scheme: Summer Sky
 
         ## The color of an idle widget face.
-        widget = "#F2E6AA",
+        widget = "#505050",
 
         ## The color of a focused widget face.
-        widget_hover = "#FCFCA4",
+        widget_hover = "#736AFF",
 
         ## The color of the text in a widget.
-        widget_text = "#7DA8B3",
+        widget_text = "#FFFFFF",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
