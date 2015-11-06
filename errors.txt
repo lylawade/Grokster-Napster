@@ -2,6 +2,7 @@
 errors listed below, and try again.
 
 
+<<<<<<< HEAD
 File "game/script.rpy", line 13: expected statement.
     <<<<<<< HEAD
                 ^
@@ -25,5 +26,14 @@ File "game/script.rpy", line 24: expected statement.
 File "game/script.rpy", line 26: expected statement.
     >>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
                                                     ^
+=======
+File "game/script.rpy", line 121: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    with dissolve
+    ^
+
+File "game/script.rpy", line 125: expected ':' not found.
+    label CollegeCampus
+                       ^
+>>>>>>> 4097590d803459946f81beae2e5900e3253c73ff
 
 Ren'Py Version: Ren'Py 6.99.7.858
