@@ -8,6 +8,8 @@ image desk = "messydesk.jpg"
 image library = "library.jpg"
 image dorm="dorm.jpg"
 image campus = "collegecampus.jpg"
+image blankpage = "blankpage.jpg"
+image saving = "saving.png"
 
 image judge = "judge.png"
 image boss = "boss.png"
@@ -49,38 +51,33 @@ label start:
 
     i "I'm on it!"
     
-    scene courtroom
-    with dissolve
-    
     stop music fadeout 1.0
-    
-    i "Guess I should start here!"
-    
-    show judy
-    
-    "Judge Name" "Well what did you want to ask me?"
-    
+
     scene library
     with dissolve 
     play music "Clannad Soundtrack- Track 8- Hurry Starfish.mp3"
-    i "well I guess I better start studying oh.. hey it's kurumi with her ever bodacious outfit"
+    i "Well I guess I better start studying Oh.. Hey it's Kurumi with her ever bodacious outfit!"
     "You realize that the library is about to close and that you only have enough time to either talk to Kurumi or look for a book on your case"
-    
+
+label ResearchMenu:    
 menu:
     
     "Talk to Kurumi":
         jump KurumiScene
     
-    "Research Books":
+    "Research with books":
         jump SearchBooksScene
+        
+    "I'm done researching":
+        jump DormRoomScene
         
 label KurumiScene:
 
         show kurumi
-        k "well well fancy seeing you here"
-        i " what are you up to?"
-        k "Oh nothing just pretending to study"
-        i "haha, well I actually have to study the Sony Case"
+        k "Well well, fancy seeing you here!"
+        i "What are you up to?"
+        k "Oh nothing, just pretending to study."
+        i "(Haha) Well I actually have to study the Sony Case."
         hide kurumi
         show kurumi_2
         k "You mean Sony Corporation of America v. Universal City Studios, Inc? I know everything there is to know about the case, so ask away!"
@@ -101,51 +98,53 @@ menu:
         
 
 label FairUse:
-    k "Fair Use is based on four main principles " 
+    k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
 label BetaMax:
-    k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
+    k "The court found that the Betamax had many non-infringing use potential (such as educational purposes)."
     jump KurumiMenu
 
 label SearchBooksScene:
 
-      "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc"
+      "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc."
       show lawBook
       i "Wow this book literally has what I'm looking for!"
+      i "Book Contents:\n\nSony v. Universal Studios:\n- Case decided in 1984\n- Decided in Sony's favor\n- Betamax technology was in line with fair use doctrine\n- Technology had substantial non-infringing potential\n"
+      hide lawBook
+      jump ResearchMenu
 
-jump DormRoomScene
 
 label KurumiDormRoomScene:
-    i "Thanks for the info Kurumi, see you tomorrow, maybe"
+    i "Thanks for the info Kurumi, see you tomorrow, maybe!"
     jump DormRoomScene
 
 label DormRoomScene:
     scene dorm
-    i "After an exhausting day I think it's time to go to bed"
+    i "After an exhausting day I think it's time to go to bed."
     with dissolve
     scene dorm
-    "it's morning and you decide to go to campus and ask other students if they remember napster"
+    "It's morning and you decide to go to campus and ask other students if they remember Napster."
     
 label CollegeCampus:
         scene campus
-        i "hmm lets see....."
+        i "Hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
-        "You pull aside an innocent looking girl and decide to interrogate her"
+        "You pull aside an innocent looking girl and decide to interrogate her."
         show makina1
-        m "whaaa??"
-        i "So do you know anything about Napster??"
+        m "Whaaa??"
+        i "So do you know anything about Napster?"
         hide makina1
         show makina2
-        m "Oh Napster? I loved Napster it was a cool p2p technology software that made it easy to share music !!!"
+        m "Oh Napster? I loved Napster!! It was a cool p2p technology software that made it easy to share music !!!"
         m "In fact alot of the music that's in my IPOD was downloaded off of Napster!"
-        "You decide to question Makina more about Napster"
+        "You decide to question Makina more about Napster."
         
 label Questionaaire:
 menu:
     "Could you guess about what percentage of the music was actually legal?":
         jump QuestionOne
-    "Space shifting is when you store music on a server from one device and then access on it another device.  Did you often use Napster for those purposes?":
+    "Did you use Napster for space shifting?":
         jump QuestionTwo
     "Have you heard of the new artist program?": 
         jump QuestionThree
@@ -154,25 +153,47 @@ menu:
     "What do you use now instead of Napster?":
         jump QuestionFive    
 label QuestionOne:
-    
+    m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
 
 label QuestionTwo:
-    
+    m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
     jump Questionaaire
 
 label QuestionThree:
-    
+    m "Yeah I heard about it, but I really didn’t use Napster for that honestly. I already know what music artists I like!!"
     jump Questionaaire
 
 label QuestionFour:
-    
+    m "I heard they got sued or something and went out of business!!"
     jump Questionaaire     
 
 label QuestionFive:
+    m "Instead of Napster I started using Grokster’s Swaptor application.  It made it easy for me to quickly do the stuff I used to do on Napster with Grokster.  Though I heard they got sued too, so I’m not sure what’s next…"
+    "Alright! Thanks for your help!"
+    m "Uh... yeah sure..."
+    hide m
+    jump NapsterConclusion
     
 label NapsterConclusion:
+    scene blankpage
+    "Well I better put together my research on the Napster case...\n"
     
-
+    "1. Case was decided in US District Court in 2000 against Napster."
+    "2. Judge Patel found that Napster’s service was not protected by Sony ruling and that the substantial noninfringing use did not apply."
+    "3. The claims of fair use regarding space shifting and sampling by Napster were also dismissed since Napster made permanent copies of uploaded
+     files (not sampling) and made said files available to other users (not protected as space shifting)."
+    "4. Napster’s claims for permissive distribution were accepted and those features of Napster were allowed to continue."
+    "5. Also found that Napster was held for contributory infringement because while they “terminated users” offering the copyrighted files, the files
+     themselves remained available to other users. "
+    "6. Napster also planned on benefiting from this service commercially."
+    "7. Court ends up granting plaintiff's request for a preliminary injunction."
+    "8. Napster ends up declaring bankruptcy in 2002."
+    
+    scene saving
+    "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
+    "I guess the first place I’ll start is the internet to get some background"
+    jump Grokster
+    
 label Grokster:
     
