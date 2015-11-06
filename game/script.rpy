@@ -15,7 +15,7 @@ image weke = "weke.png"
 image judge = "judge.png"
 image boss = "boss.png"
 image computer = "laptop.jpg"
-
+image sony = "sony.png"
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
@@ -23,6 +23,7 @@ image lawBook = "lawbook.png"
 
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
+image published = "published.jpg"
 
 image judy = "judgejudy.png"
 
@@ -56,15 +57,14 @@ label start:
             at the paper. Not a lot of interns get published you know!"
 
     i "I'm on it!"
-    
+    "You decide that the first place to go to do some research is the Library"
     stop music fadeout 1.0
 
     scene library
     with dissolve 
     play music "Clannad Soundtrack- Track 8- Hurry Starfish.mp3"
     i "Well I guess I better start studying Oh.. Hey it's Kurumi with her ever bodacious outfit!"
-    "You realize that the library is about to close and that you only have enough time to either talk to Kurumi or look for a book on your case"
-
+    
 label ResearchMenu:    
 menu:
     
@@ -110,7 +110,6 @@ label FairUse:
 
 label BetaMax:
     k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
-  
     k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
@@ -123,24 +122,28 @@ label SearchBooksScene:
       "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc."
       show lawBook
       i "Wow this book literally has what I'm looking for!"
-      i "Book Contents:\n\nSony v. Universal Studios:\n- Case decided in 1984\n- Decided in Sony's favor\n- Betamax technology was in line with fair use doctrine\n- Technology had substantial non-infringing potential\n"
       hide lawBook
+      show sony  
+      i "Book Contents:\n\nSony v. Universal Studios:\n- Case decided in 1984\n- Decided in Sony's favor\n- Betamax technology was in line with fair use doctrine\n- Technology had substantial non-infringing potential\n"
+      hide sony
       jump ResearchMenu
 
 
 label KurumiDormRoomScene:
     i "Thanks for the info Kurumi, see you tomorrow, maybe!"
-    jump DormRoomScene
+    jump ResearchMenu
 
 label DormRoomScene:
     scene dorm
     i "After an exhausting day I think it's time to go to bed."
     with dissolve
     scene dorm
+    with dissolve
     "It's morning and you decide to go to campus and ask other students if they remember Napster."
     
 label CollegeCampus:
         scene campus
+        with dissolve
         i "Hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
         "You pull aside an innocent looking girl and decide to interrogate her."
@@ -165,6 +168,8 @@ menu:
         jump QuestionFour
     "What do you use now instead of Napster?":
         jump QuestionFive    
+    "I think I've I asked all the questions I wanted to ask!":
+        jump NapsterConclusion
 label QuestionOne:
 
     
@@ -173,6 +178,7 @@ label QuestionOne:
 
 m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
 jump Questionaaire
+
 label QuestionOne:   
         jump QuestionFive  
         
@@ -194,13 +200,18 @@ label QuestionFour:
 
 label QuestionFive:
     m "Instead of Napster I started using Grokster’s Swaptor application.  It made it easy for me to quickly do the stuff I used to do on Napster with Grokster.  Though I heard they got sued too, so I’m not sure what’s next…"
-    "Alright! Thanks for your help!"
-    m "Uh... yeah sure..."
-    hide m
-    jump NapsterConclusion
+    
+    jump Questionaaire
     
 label NapsterConclusion:
+    
+    "Alright! Thanks for your help!"
+    m "Uh... yeah sure...weirdo"
+    
     scene blankpage
+    with dissolve
+    stop music fadeout 1.0
+    play music "Pokemon Ruby-Sapphire-Emerald- Littleroot Town.mp3"
     "Well I better put together my research on the Napster case...\n"
     
     "1. Case was decided in US District Court in 2000 against Napster."
@@ -235,7 +246,6 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
-       
         jump Opinions        
         
         
@@ -289,8 +299,13 @@ label doneOpinions:
     i "This is a lot of great information, let’s see how I can sum it up!"
     i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
     i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
-    
-   
+    scene published
+    i "We are done with our research!"
+       
+        
+        
+        
+
  
     
 label endScene:
