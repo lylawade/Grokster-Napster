@@ -28,7 +28,8 @@ image makina2 = "makina2.png"
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
-                                       
+
+                           
 label start:
     play music "Shirobako OST Ending 2- Platinum Jet Instrumental.mp3"
     
@@ -102,10 +103,12 @@ menu:
 
 label FairUse:
     k "Fair Use is based on four main principles " 
+  
     jump KurumiMenu
 
 label BetaMax:
     k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
+  
     jump KurumiMenu
 
 label SearchBooksScene:
@@ -175,4 +178,12 @@ label NapsterConclusion:
     
 
 label Grokster:
+    
+    
+label endScene:
+scene desk
+
+            
+
+
     

@@ -2,8 +2,20 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 119: expected ':' not found.
-    label KurumiDormRoom Scene:
-                         ^
+File "game/script.rpy", line 31: expected statement.
+    researchList = []
+                 ^
+
+File "game/script.rpy", line 106: expected statement.
+    researchList.append("Fair Use")
+                                   ^
+
+File "game/script.rpy", line 111: expected statement.
+    researchList.append("The Betamax had many noninfringing potential")
+                                                                       ^
+
+File "game/script.rpy", line 187: expected statement.
+    for x in len(researchList)
+                ^
 
 Ren'Py Version: Ren'Py 6.99.7.858

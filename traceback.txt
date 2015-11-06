@@ -1,20 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 139, in script
-    m "I don't remember....like 90%??"
-ValueError: unsupported format character '?' (0x3f) at index 28
+  File "game/script.rpy", line 186, in script
+    python:
+  File "game/script.rpy", line 192, in <module>
+    renpy.say(i, "%s" %(x))
+Exception: Can't add displayable during init phase.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 139, in script
-    m "I don't remember....like 90%??"
-  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\exports.py", line 1028, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character '?' (0x3f) at index 28
+  File "game/script.rpy", line 186, in script
+    python:
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\python.py", line 1460, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 192, in <module>
+    renpy.say(i, "%s" %(x))
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\exports.py", line 1036, in say
+    who(what, interact=interact)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 429, in display_say
+    behavior = renpy.ui.saybehavior(allow_dismiss=renpy.config.say_allow_dismiss)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ui.py", line 431, in __call__
+    raise Exception("Can't add displayable during init phase.")
+Exception: Can't add displayable during init phase.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.7.858
