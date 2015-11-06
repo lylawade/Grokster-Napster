@@ -2,10 +2,8 @@
 errors listed below, and try again.
 
 
-<<<<<<< HEAD
-File "game/script.rpy", line 173: indentation mismatch.
-=======
-File "game/script.rpy", line 246: indentation mismatch.
->>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
+File "game/script.rpy", line 211: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    m "Uh... yeah sure...weirdo"
+    ^
 
 Ren'Py Version: Ren'Py 6.99.7.858
