@@ -321,6 +321,7 @@ label doneOpinions:
     i "This is a lot of great information, let’s see how I can sum it up!"
     i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
     i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
+<<<<<<< HEAD
     scene published 
     with dissolve
     i "We are done with our research!"
@@ -328,6 +329,16 @@ label doneOpinions:
     "You finish the paper and hand it to the boss"
     "A few days later you see that your paper has been published and it's a smashing success!"
     "The end....for now"
+=======
+    scene published
+    i "We are done with our research!"
+        
+        
+        
+        
+        
+        
+>>>>>>> 6573fb541d0731a7360e728ab65493d2fba23f5f
     
         
 
