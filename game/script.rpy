@@ -11,29 +11,19 @@ image campus = "collegecampus.jpg"
 
 image judge = "judge.png"
 image boss = "boss.png"
-<<<<<<< HEAD
-=======
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
 
 image judy = "judgejudy.png"
 
-<<<<<<< HEAD
-=======
 image makina1 = "makina1.png" 
-image makina2 = "makina2.png"
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
@@ -106,7 +96,7 @@ menu:
     "Ask Kurumi about the Betamax's noninfringing potential":
         jump BetaMax
     "I think I've got enough information!":
-        jump KurumiDormRoomScene
+        jump DormRoomScene
         
 
 label FairUse:
@@ -121,15 +111,12 @@ label SearchBooksScene:
 
       "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc"
       show lawBook
-      i "Wow this book literally has what I'm looking for!"
+      i "wow this book literally has what I'm looking for!"
 
 jump DormRoomScene
 
-label KurumiDormRoomScene:
-    i "Thanks for the info Kurumi, see you tomorrow, maybe"
-    jump DormRoomScene
-
 label DormRoomScene:
+    i "Thanks for the info Kurumi, see you tomorrow, maybe"
     scene dorm
     i "After an exhausting day I think it's time to go to bed"
     with dissolve
@@ -140,48 +127,18 @@ label CollegeCampus:
         scene campus
         i "hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
-        "You pull aside an innocent looking girl and decide to interrogate her"
+        "you pull aside an innocent looking girl and decide to interrogate her"
         show makina1
-        m "whaaa??"
+        m "fuehh??"
         i "So do you know anything about Napster??"
-        hide makina1
-        show makina2
-        m "Oh Napster? I loved Napster it was a cool p2p technology software that made it easy to share music !!!"
-        m "In fact alot of the music that's in my IPOD was downloaded off of Napster!"
-        "You decide to question Makina more about Napster"
+        m "ummmmm I guess?"
+        i "so what did you use it for?"
+        m "d-downloading music I guesssss"
+        i "and did you know that was illegal"
+        m "s-sort of but everyone was doing it"
+        i "how much of your music was illegally downloaded would you say"
+        m "I don't remember....like 90\%??"
+        "After interviewing other students, you find that the ones that knew about and used napster said that most of their music was illegally downloaded"
         
-label Questionaaire:
-menu:
-    "Could you guess about what percentage of the music was actually legal?":
-        jump QuestionOne
-    "Space shifting is when you store music on a server from one device and then access on it another device.  Did you often use Napster for those purposes?":
-        jump QuestionTwo
-    "Have you heard of the new artist program?": 
-        jump QuestionThree
-    "Do you know what happened to Napster?":    
-        jump QuestionFour
-    "What do you use now instead of Napster?":
-        jump QuestionFive    
-label QuestionOne:
     
-    jump Questionaaire
-
-label QuestionTwo:
-    
-    jump Questionaaire
-
-label QuestionThree:
-    
-    jump Questionaaire
-
-label QuestionFour:
-    
-    jump Questionaaire     
-
-label QuestionFive:
-    
-label NapsterConclusion:
-    
-
-label Grokster:
     
