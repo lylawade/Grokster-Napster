@@ -23,7 +23,6 @@ image lawBook = "lawbook.png"
 
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
-image published = "published.jpg"
 
 image judy = "judgejudy.png"
 
@@ -110,6 +109,8 @@ label FairUse:
 
 label BetaMax:
     k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
+  
+
     k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
@@ -181,12 +182,14 @@ label QuestionOne:
 m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
 jump Questionaaire
 
+
 label QuestionOne:   
         jump QuestionFive  
         
 label QuestionOne:    
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
+
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -207,7 +210,7 @@ label QuestionFive:
     
 label NapsterConclusion:
     
-    "Alright! Thanks for your help!"
+    i "Alright! Thanks for your help!"
     m "Uh... yeah sure...weirdo"
     
     scene blankpage
@@ -248,6 +251,9 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+
+ #       jump Opinions        
+
         jump Opinions        
         
         
@@ -259,8 +265,6 @@ menu:
                   jump Ginsburg
         "Justices Breyer, Stevens, and O’Connor":
                  jump Breyer
-        "Done asking all the judges": 
-                jump doneOpinions 
         
         
         
@@ -297,18 +301,22 @@ label Breyer:
         hide breyer
         jump Opinions
 
-label doneOpinions:   
-    i "This is a lot of great information, let’s see how I can sum it up!"
-    i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
-    i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
-    scene published
-    i "We are done with our research!"
-       
-        
-        
-        
 
- 
+        
+        
+#label Opinions:
+#menu: 
+#        "Justice Souter": 
+        
+        
+        
+        
+        
+        
+        
+    
+
+    
     
 label endScene:
 scene desk
