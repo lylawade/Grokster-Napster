@@ -10,7 +10,7 @@ image judge = "judge.png"
 image boss = "boss.png"
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
-
+image judy = "judgejudy.png"
 define i = Character('Me', color="#c8c8ff")
                                        
 label start:
@@ -37,6 +37,6 @@ label start:
     
     i "Guess I should start here!"
     
-    show judge
+    show judy
     
     "Judge Name" "Well what did you want to ask me?"
