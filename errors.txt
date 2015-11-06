@@ -3,6 +3,7 @@ errors listed below, and try again.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 File "game/script.rpy", line 25: expected statement.
@@ -56,4 +57,10 @@ File "game/script.rpy", line 125: expected ':' not found.
 >>>>>>> c702c8ca27da73abed47faa93758ca9c98919def
 >>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 
+=======
+File "game/script.rpy", line 119: expected ':' not found.
+    label KurumiDormRoom Scene:
+                         ^
+
+>>>>>>> 696d9ed47e6261391acadad264585093e44e4a58
 Ren'Py Version: Ren'Py 6.99.7.858
