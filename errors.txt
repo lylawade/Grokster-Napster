@@ -2,65 +2,8 @@
 errors listed below, and try again.
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-File "game/script.rpy", line 25: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/script.rpy", line 28: expected statement.
-    =======
+File "game/script.rpy", line 200: Menu does not contain any choices.
+    menu: 
           ^
 
-File "game/script.rpy", line 29: expected statement.
-    >>>>>>> 240f2812dcf8d33b2350fb62eb092706f1a2307f
-                                                    ^
-=======
-<<<<<<< HEAD
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
-File "game/script.rpy", line 13: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/script.rpy", line 18: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 21: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/script.rpy", line 23: expected statement.
-    =======
-          ^
-
-File "game/script.rpy", line 24: expected statement.
-    >>>>>>> origin/master
-                         ^
-
-File "game/script.rpy", line 26: expected statement.
-    >>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
-                                                    ^
-<<<<<<< HEAD
-=======
-=======
-File "game/script.rpy", line 121: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    with dissolve
-    ^
-
-File "game/script.rpy", line 125: expected ':' not found.
-    label CollegeCampus
-                       ^
->>>>>>> 4097590d803459946f81beae2e5900e3253c73ff
->>>>>>> c702c8ca27da73abed47faa93758ca9c98919def
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
-
-=======
-File "game/script.rpy", line 119: expected ':' not found.
-    label KurumiDormRoom Scene:
-                         ^
-
->>>>>>> 696d9ed47e6261391acadad264585093e44e4a58
 Ren'Py Version: Ren'Py 6.99.7.858

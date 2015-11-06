@@ -9,8 +9,10 @@ image library = "library.jpg"
 image dorm="dorm.jpg"
 image campus = "collegecampus.jpg"
 
+image weke = "weke.png"
 image judge = "judge.png"
 image boss = "boss.png"
+image computer = "laptop.jpg"
 
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
@@ -23,6 +25,7 @@ image lawStudent = "lawStudent.png"
 image judy = "judgejudy.png"
 
 image makina1 = "makina1.png" 
+image makina2 = "makina2.png"
 
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
@@ -96,7 +99,7 @@ menu:
     "Ask Kurumi about the Betamax's noninfringing potential":
         jump BetaMax
     "I think I've got enough information!":
-        jump DormRoomScene
+        jump KurumiDormRoomScene
         
 
 label FairUse:
@@ -111,12 +114,15 @@ label SearchBooksScene:
 
       "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc"
       show lawBook
-      i "wow this book literally has what I'm looking for!"
+      i "Wow this book literally has what I'm looking for!"
 
 jump DormRoomScene
 
-label DormRoomScene:
+label KurumiDormRoomScene:
     i "Thanks for the info Kurumi, see you tomorrow, maybe"
+    jump DormRoomScene
+
+label DormRoomScene:
     scene dorm
     i "After an exhausting day I think it's time to go to bed"
     with dissolve
@@ -127,18 +133,78 @@ label CollegeCampus:
         scene campus
         i "hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
-        "you pull aside an innocent looking girl and decide to interrogate her"
+        "You pull aside an innocent looking girl and decide to interrogate her"
         show makina1
-        m "fuehh??"
+        m "whaaa??"
         i "So do you know anything about Napster??"
-        m "ummmmm I guess?"
-        i "so what did you use it for?"
-        m "d-downloading music I guesssss"
-        i "and did you know that was illegal"
-        m "s-sort of but everyone was doing it"
-        i "how much of your music was illegally downloaded would you say"
-        m "I don't remember....like 90\%??"
-        "After interviewing other students, you find that the ones that knew about and used napster said that most of their music was illegally downloaded"
+        hide makina1
+        show makina2
+        m "Oh Napster? I loved Napster it was a cool p2p technology software that made it easy to share music !!!"
+        m "In fact alot of the music that's in my IPOD was downloaded off of Napster!"
+        "You decide to question Makina more about Napster"
+        
+label Questionaaire:
+menu:
+    "Could you guess about what percentage of the music was actually legal?":
+        jump QuestionOne
+    "Space shifting is when you store music on a server from one device and then access on it another device.  Did you often use Napster for those purposes?":
+        jump QuestionTwo
+    "Have you heard of the new artist program?": 
+        jump QuestionThree
+    "Do you know what happened to Napster?":    
+        jump QuestionFour
+    "What do you use now instead of Napster?":
+        jump QuestionFive    
+label QuestionOne:
+    
+         jump Questionaaire
+  #    jump Grokster        
+   
+
+label QuestionTwo:
+    
+    jump Questionaaire
+
+label QuestionThree:
+    
+    jump Questionaaire
+
+label QuestionFour:
+    
+    jump Questionaaire     
+
+label QuestionFive:
+    
+label NapsterConclusion:
+    
+
+label Grokster: 
+        scene weke
+        i "Hmm this looks like a good website"
+        
+        scene computer
+        i "Found out Grokster and StreamCast Networks were two companies that offered similar p2p services"
+        i "And both being sued by MGM and other copyright holders!!"
+        i "Ruled in generally in favor of Grokster and StreamCast at the District and Appellate Court level "
+        i "These lower courts said Grokster and StreamCast were protected partially under Sony and that since their software system was decentralized they did not have specific knowledge of the infringing acts"
+        i "In addition, there was potential for noninfringing uses"
+        
+        i "Hmm even though the lower courts ruled in favor of these companies, they lost once they reached the Supreme Court.  I guess I should look at the opinions of all the judges then"
+        
+        scene courtroom
+        i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+ #       jump Opinions        
+        
+        
+#label Opinions:
+#menu: 
+#        "Justice Souter": 
+        
+        
+        
+        
+        
+        
         
     
     
