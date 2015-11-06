@@ -33,6 +33,9 @@ define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
 
+image souter = "brownpigeon.png"
+image breyer  = "dirtypigeon.png"
+image ginsburg = "whitepigeon.png"
                            
 label start:
     play music "Shirobako OST Ending 2- Platinum Jet Instrumental.mp3"
@@ -101,7 +104,10 @@ menu:
         
 
 label FairUse:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
     k "Fair Use is based on four main principles " 
   
     jump KurumiMenu
@@ -109,7 +115,10 @@ label FairUse:
 label BetaMax:
     k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
     k "Fair Use is based on four main principles: " 
     jump KurumiMenu
 
@@ -164,6 +173,7 @@ menu:
         jump QuestionFour
     "What do you use now instead of Napster?":
         jump QuestionFive    
+<<<<<<< HEAD
 label QuestionOne:
 
     
@@ -173,6 +183,14 @@ label QuestionOne:
 m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
 jump Questionaaire
 
+=======
+label QuestionOne:   
+        jump QuestionFive  
+        
+label QuestionOne:    
+    m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
+    jump Questionaaire
+>>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -212,7 +230,6 @@ label NapsterConclusion:
     "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
-    
 
 
 label Grokster: 
@@ -230,7 +247,57 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+<<<<<<< HEAD
  #       jump Opinions        
+=======
+        jump Opinions        
+        
+        
+label Opinions:
+menu: 
+        "Justice Souter": 
+                 jump Souter
+        "Justices Ginsburg, Rehnquist, and Kennedy":
+                  jump Ginsburg
+        "Justices Breyer, Stevens, and O’Connor":
+                 jump Breyer
+        
+        
+        
+label Souter: 
+         "Justice Souter had the main opinion so let’s see what he had to say"
+         show souter
+         "Justice Souter:" "First , the lower courts had misapplied the Sony rulings.  Grokster and StreamCast are not protected by that ruling."
+         "Justice Souter:" "Grokster and StreamCast knew that most of their downloads were from copyrighted material"
+         "Justice Souter:" "They even tried to induce their users to freely infringe through their services"
+         "Justice Souter:" "The fact that they both had a commercial goal by trying to tap into Napster’s old customer base clearly reflects their intentions"
+         "Justice Souter:" "In addition neither company also took any real initiative to tackle the infringing activities"
+         "Justice Souter:" "Thus, Grokster and StreamCast are held liable for their actions"
+         hide souter
+         jump Opinions
+        
+label Ginsburg: 
+        i "Let’s see what Justice’s Ginsburg’s opinion was"
+        show ginsburg
+        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justis Ginsburg:" "The lower courts erred in taking a few examples of legal use of the services to conclude that Grokster and StreamCast are protected under Sony"
+        "Justis Ginsburg:" "In addition, the lower courts also focused too much on deciding the legality of the technology when instead they should have debated the legality of the services themselves."
+        "Justis Ginsburg:" "Thus Grokster and StreamCast are held liable for the infringing acts of users. In addition, the Sony decision should be more strictly applied going forward."
+        hide ginsburg
+        jump Opinions
+        
+label Breyer: 
+        i "Hmm, I wonder what Justis Breyer had to say…"
+        show breyer
+        "Justis Breyer:" "Justice Ginsburg and Justice Souter are correct in finding Grokster and StreamCast liable for contributory infringement.  However, this only because Grokster and StreamCast induced their users to commit to the copyright infringement"
+        "Justis Breyer:" "Even though only 10\% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+        "Justis Breyer:" "There is no concrete reason to interpret and apply the outcome of the Sony case more strictly than  before."
+        "Justis Breyer:" "As a result, Grokster and Streamcast are held liable for their actions and the actions of their users."
+        hide breyer
+        jump Opinions
+
+>>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
         
         
 #label Opinions:
@@ -249,8 +316,5 @@ label Grokster:
     
 label endScene:
 scene desk
-
-            
-
 
     
