@@ -1,4 +1,4 @@
-Fri Nov  6 01:52:29 2015
+Fri Nov  6 01:56:27 2015
 Linux-3.13.0-46-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
  
@@ -18,7 +18,7 @@ Backing up script files to '/home/sharbesh/.renpy/backups/Grokster-Napster':
 Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.19s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
@@ -237,18 +237,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.996705055237s
+Total time until interface ready: 0.804933071136s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.010429 seconds.
-- Frame drawn at 0.023824 seconds.
-- Frame drawn at 0.039236 seconds.
-- Frame drawn at 0.055393 seconds.
-- 0.055393 seconds to render 5 frames.
+- Frame drawn at 0.005785 seconds.
+- Frame drawn at 0.014904 seconds.
+- Frame drawn at 0.031876 seconds.
+- Frame drawn at 0.048568 seconds.
+- 0.048568 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Prepare screens took 0.04s
+Prepare screens took 0.07s
 Running _start took 0.00s

@@ -165,6 +165,14 @@ menu:
         jump QuestionFour
     "What do you use now instead of Napster?":
         jump QuestionFive    
+label QuestionOne:
+
+    
+         jump Questionaaire
+  # jump Grokster        
+
+m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
+jump Questionaaire
 label QuestionOne:   
         jump QuestionFive  
         
@@ -211,6 +219,7 @@ label NapsterConclusion:
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
 
+
 label Grokster: 
         scene weke
         i "Hmm this looks like a good website"
@@ -226,6 +235,7 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+       
         jump Opinions        
         
         
@@ -275,15 +285,13 @@ label Breyer:
         hide breyer
         jump Opinions
 
-        
 label doneOpinions:   
     i "This is a lot of great information, let’s see how I can sum it up!"
     i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
     i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
     
-    
-    
-    
+   
+ 
     
 label endScene:
 scene desk
