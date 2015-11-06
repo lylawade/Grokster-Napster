@@ -22,11 +22,9 @@ image lawStudent = "lawStudent.png"
 
 image judy = "judgejudy.png"
 
-<<<<<<< HEAD
 image makina1 = "makina1.png" 
+image makina2 = "makina2.png"
 
-=======
->>>>>>> 240f2812dcf8d33b2350fb62eb092706f1a2307f
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
@@ -51,7 +49,16 @@ label start:
 
     i "I'm on it!"
     
+    scene courtroom
+    with dissolve
+    
     stop music fadeout 1.0
+    
+    i "Guess I should start here!"
+    
+    show judy
+    
+    "Judge Name" "Well what did you want to ask me?"
     
     scene library
     with dissolve 
@@ -121,18 +128,20 @@ label CollegeCampus:
         scene campus
         i "hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
-        "you pull aside an innocent looking girl and decide to interrogate her"
+        "You pull aside an innocent looking girl and decide to interrogate her"
         show makina1
-        m "fuehh??"
+        m "whaaa??"
         i "So do you know anything about Napster??"
-        m "ummmmm I guess?"
-        i "so what did you use it for?"
-        m "d-downloading music I guesssss"
+        hide makina1
+        show makina2
+        m "Oh Napster? I loved Napster!!!"
+        i "What did you use it for?"
+        m "Downloading freeeeee music of course!"
         i "and did you know that was illegal"
-        m "s-sort of but everyone was doing it"
+        m "S-sort of but everyone was doing it"
         i "how much of your music was illegally downloaded would you say"
         m "I don't remember....like 90\%??"
-        " After interviewing other students, you find that the ones that knew about and used napster said that most of their music was illegally downloaded"
+        "After interviewing other students, you find that the ones that knew about and used Napster said that most of their music was illegally downloaded"
         
     
     
