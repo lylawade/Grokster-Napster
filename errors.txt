@@ -2,32 +2,6 @@
 errors listed below, and try again.
 
 
-<<<<<<< HEAD
-File "game/script.rpy", line 220: choice menuitem expects a non-empty block.
-    "Justice Souter": 
-                      ^
-=======
-<<<<<<< HEAD
-File "game/script.rpy", line 31: expected statement.
-    researchList = []
-                 ^
-
-File "game/script.rpy", line 106: expected statement.
-    researchList.append("Fair Use")
-                                   ^
-
-File "game/script.rpy", line 111: expected statement.
-    researchList.append("The Betamax had many noninfringing potential")
-                                                                       ^
-
-File "game/script.rpy", line 187: expected statement.
-    for x in len(researchList)
-                ^
-=======
-File "game/script.rpy", line 200: Menu does not contain any choices.
-    menu: 
-          ^
->>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
->>>>>>> dc52d00dd3dcc763d228209596035c83679c728e
+File "game/script.rpy", line 246: indentation mismatch.
 
 Ren'Py Version: Ren'Py 6.99.7.858
