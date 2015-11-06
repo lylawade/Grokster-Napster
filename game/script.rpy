@@ -154,16 +154,9 @@ menu:
         jump QuestionFour
     "What do you use now instead of Napster?":
         jump QuestionFive    
-label QuestionOne:
-<<<<<<< HEAD
-    
-         jump Questionaaire
-  #    jump Grokster        
-   
-=======
+label QuestionOne:   
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
->>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -203,8 +196,6 @@ label NapsterConclusion:
     "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
-    
-<<<<<<< HEAD
 
 label Grokster: 
         scene weke
@@ -221,21 +212,49 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
- #       jump Opinions        
+        jump Opinions        
         
         
-#label Opinions:
-#menu: 
-#        "Justice Souter": 
+label Opinions:
+menu: 
+        "Justice Souter": 
+                 jump Souter
+        "Justices Ginsburg, Rehnquist, and Kennedy":
+                  jump Ginsburg
+        "Justices Breyer, Stevens, and O’Connor":
+                 jump Breyer
         
         
         
+label Souter: 
+        i "Justice Souter had the main opinion so let’s see what he had to say"
+        #show souter
+        "First , the lower courts had misapplied the Sony rulings.  Grokster and StreamCast are not protected by that ruling."
+        "Grokster and StreamCast knew that most of their downloads were from copyrighted material"
+        "They even tried to induce their users to freely infringe through their services"
+        "The fact that they both had a commercial goal by trying to tap into Napster’s old customer base clearly reflects their intentions"
+        "In addition neither company also took any real initiative to tackle the infringing activities"
+        "Thus, Grokster and StreamCast are held liable for their actions"
+        jump Opinions
         
+label Ginsburg: 
+        i "Let’s see what Justice’s Ginsburg’s opinion was"
+        #show ginsburg
+        "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "The lower courts erred in taking a few examples of legal use of the services to conclude that Grokster and StreamCast are protected under Sony"
+        "In addition, the lower courts also focused too much on deciding the legality of the technology when instead they should have debated the legality of the services themselves."
+        "Thus Grokster and StreamCast are held liable for the infringing acts of users. In addition, the Sony decision should be more strictly applied going forward."
+        jump Opinions
         
+label Breyer: 
+        i "Hmm, I wonder what these three had to say…"
+        #show breyer
+        "Justice Ginsburg and Justice Souter are correct in finding Grokster and StreamCast liable for contributory infringement.  However, this only because Grokster and StreamCast induced their users to commit to the copyright infringement"
+        "Even though only 10\% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+        "There is no concrete reason to interpret and apply the outcome of the Sony case more strictly than  before."
+        "As a result, Grokster and Streamcast are held liable for their actions and the actions of their users."
+        jump Opinions
         
-        
-    
-=======
-label Grokster:
->>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
+
     

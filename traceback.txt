@@ -1,21 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 71, in script
-    jump dormRoomScene
-ScriptError: could not find label 'dormRoomScene'.
+  File "game/script.rpy", line 254, in script
+    "Even though only 10% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+TypeError: %o format: a number is required, not TagQuotingDict
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 71, in script
-    jump dormRoomScene
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 1512, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/script.py", line 843, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'dormRoomScene'.
+  File "game/script.rpy", line 254, in script
+    "Even though only 10% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+  File "/home/sharbesh/Documents/Fall 2015/306/renpy-6.99.7-sdk/renpy/ast.py", line 603, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/home/sharbesh/Documents/Fall 2015/306/renpy-6.99.7-sdk/renpy/exports.py", line 1028, in say
+    what = what % tag_quoting_dict
+TypeError: %o format: a number is required, not TagQuotingDict
 
-Linux-3.19.0-31-generic-x86_64-with-debian-jessie-sid
+Linux-3.13.0-46-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
 Napster-Grokster 0.0
