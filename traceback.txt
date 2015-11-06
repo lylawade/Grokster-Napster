@@ -1,15 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< HEAD
   File "game/script.rpy", line 186, in script
     python:
   File "game/script.rpy", line 192, in <module>
     renpy.say(i, "%s" %(x))
 Exception: Can't add displayable during init phase.
+=======
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+ScriptError: could not find label 'dormRoomScene'.
+>>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
   File "game/script.rpy", line 186, in script
     python:
   File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 805, in execute
@@ -29,7 +36,16 @@ Full traceback:
   File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ui.py", line 431, in __call__
     raise Exception("Can't add displayable during init phase.")
 Exception: Can't add displayable during init phase.
+=======
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 1512, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'dormRoomScene'.
+>>>>>>> bf800081caa4f473300f9fbd8dab5b01943bec39
 
-Windows-8-6.2.9200
+Linux-3.19.0-31-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
 Napster-Grokster 0.0
