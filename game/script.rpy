@@ -11,8 +11,10 @@ image campus = "collegecampus.jpg"
 image blankpage = "blankpage.jpg"
 image saving = "saving.png"
 
+image weke = "weke.png"
 image judge = "judge.png"
 image boss = "boss.png"
+image computer = "laptop.jpg"
 
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
@@ -153,8 +155,15 @@ menu:
     "What do you use now instead of Napster?":
         jump QuestionFive    
 label QuestionOne:
+<<<<<<< HEAD
+    
+         jump Questionaaire
+  #    jump Grokster        
+   
+=======
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
+>>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -195,5 +204,38 @@ label NapsterConclusion:
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
     
+<<<<<<< HEAD
+
+label Grokster: 
+        scene weke
+        i "Hmm this looks like a good website"
+        
+        scene computer
+        i "Found out Grokster and StreamCast Networks were two companies that offered similar p2p services"
+        i "And both being sued by MGM and other copyright holders!!"
+        i "Ruled in generally in favor of Grokster and StreamCast at the District and Appellate Court level "
+        i "These lower courts said Grokster and StreamCast were protected partially under Sony and that since their software system was decentralized they did not have specific knowledge of the infringing acts"
+        i "In addition, there was potential for noninfringing uses"
+        
+        i "Hmm even though the lower courts ruled in favor of these companies, they lost once they reached the Supreme Court.  I guess I should look at the opinions of all the judges then"
+        
+        scene courtroom
+        i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+ #       jump Opinions        
+        
+        
+#label Opinions:
+#menu: 
+#        "Justice Souter": 
+        
+        
+        
+        
+        
+        
+        
+    
+=======
 label Grokster:
+>>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
     

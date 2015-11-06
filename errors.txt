@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 119: expected ':' not found.
-    label KurumiDormRoom Scene:
-                         ^
+File "game/script.rpy", line 200: Menu does not contain any choices.
+    menu: 
+          ^
 
 Ren'Py Version: Ren'Py 6.99.7.858
