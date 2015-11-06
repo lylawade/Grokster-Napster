@@ -15,10 +15,11 @@ image weke = "weke.png"
 image judge = "judge.png"
 image boss = "boss.png"
 image computer = "laptop.jpg"
-
+image sony = "sony.png"
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
+image published = "published.jpg"
 
 
 image tswift = "tswift.png"
@@ -32,13 +33,17 @@ image makina2 = "makina2.png"
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
-                                       
+
+image souter = "brownpigeon.png"
+image breyer  = "dirtypigeon.png"
+image ginsburg = "whitepigeon.png"
+                           
 label start:
     play music "Shirobako OST Ending 2- Platinum Jet Instrumental.mp3"
     
     scene building
     
-    "There you are!"
+    "Boss""There you are!"
     
     scene desk
     show boss
@@ -52,15 +57,14 @@ label start:
             at the paper. Not a lot of interns get published you know!"
 
     i "I'm on it!"
-    
+    "You decide that the first place to go to do some research is the Library"
     stop music fadeout 1.0
 
     scene library
     with dissolve 
     play music "Clannad Soundtrack- Track 8- Hurry Starfish.mp3"
     i "Well I guess I better start studying Oh.. Hey it's Kurumi with her ever bodacious outfit!"
-    "You realize that the library is about to close and that you only have enough time to either talk to Kurumi or look for a book on your case"
-
+    
 label ResearchMenu:    
 menu:
     
@@ -85,40 +89,58 @@ label KurumiScene:
         k "You mean Sony Corporation of America v. Universal City Studios, Inc? I know everything there is to know about the case, so ask away!"
         i "Wow well I guess my first question would be what is the basis of the case?"
         k "Well the basis of the case was whether or not Sony's Betamax infringed upon copyrighted works by allowing users to record copyrighted works"
-        k "Sony sought money damages and an equitable accounting of profits from Universal Studios and petitioners, as well as an injunction against the manufacture and marketing of Betamax VTRs" 
-        k "Sony argued that the recording capabilities of the Betamax was well within Fair Use"
-        k "The Supreme Court concured with Sony in that the Betamax was within Fair Use and that the Betamax itself had substantial noninfringing potential"
+        k "Respondents sought money damages and an equitable accounting of profits from petitioners, as well as an injunction against the manufacture and marketing of Betamax VTRs" 
+        k "Sony argued that the recording capabilities of the Betamax was well within Fair Use and that capabilities did not constitute copyright infringement"
+        k "The Supreme Court concurred with the decision of the District Court in that Sony in that the Betamax was within Fair Use and that the Betamax itself had substantial noninfringing potential"
 
 label KurumiMenu:
 menu:
     "Ask Kurumi about Fair use":
         jump FairUse
-    "Ask Kurumi about the Betamax's noninfringing potential":
+    "Ask Kurumi about the Betamax and it's noninfringing potential":
         jump BetaMax
+    "Search for books on the Sony case":
+        jump KurumiSearchBooksScene
     "I think I've got enough information!":
         jump KurumiDormRoomScene
         
 
 label FairUse:
-    k "Fair Use is based on four main principles: " 
+    k "Fair Use is based on four main principles " 
+    k "The purpose and character of the use"
+    k "Nature of the copyrighted work"
+    k"Amount and substantiality"
+    k"The effect of the use upon the work's value"
+  
     jump KurumiMenu
 
 label BetaMax:
-    k "The court found that the Betamax had many non-infringing use potential (such as educational purposes)."
+    k "The District Court found that respondents failed to demonstrate harm to the market for their copyrighted works "
+    k "The District Court also found that the Betamax had substantial noninfringing potential"
+    k " An injunction to prevent the production of the Betamax would deprive the public of the ability to use the Betamax for noninfringing purposes "
+    
     jump KurumiMenu
-
+label KurumiSearchBooksScene:
+    i "Thanks for the info Kurumi, see you tomorrow! maybe"
+    hide kurumi_2
+    jump SearchBooksScene
+    
 label SearchBooksScene:
 
-      "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc."
+      "After searching a while you find a book that perfectly explains Sony Corporation of America v. Universal City Studios, Inc."
       show lawBook
       i "Wow this book literally has what I'm looking for!"
-      i "Book Contents:\n\nSony v. Universal Studios:\n- Case decided in 1984\n- Decided in Sony's favor\n- Betamax technology was in line with fair use doctrine\n- Technology had substantial non-infringing potential\n"
       hide lawBook
+      show sony  
+      i "Book Contents:\n\nSony v. Universal Studios:\n- Case decided in 1984\n- Decided in Sony's favor\n- Betamax technology was in line with fair use doctrine\n- Technology had substantial non-infringing potential\n"
+      hide sony
       jump ResearchMenu
 
 
 label KurumiDormRoomScene:
+    
     i "Thanks for the info Kurumi, see you tomorrow, maybe!"
+    
     jump DormRoomScene
 
 label DormRoomScene:
@@ -126,10 +148,14 @@ label DormRoomScene:
     i "After an exhausting day I think it's time to go to bed."
     with dissolve
     scene dorm
+    with dissolve
     "It's morning and you decide to go to campus and ask other students if they remember Napster."
     
 label CollegeCampus:
         scene campus
+        with dissolve
+        stop music fadeout 1.0
+        play music "Clannad Soundtrack- Track 12- Country Lane.mp3"
         i "Hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
         "You pull aside an innocent looking girl and decide to interrogate her."
@@ -153,11 +179,26 @@ menu:
     "Do you know what happened to Napster?":    
         jump QuestionFour
     "What do you use now instead of Napster?":
+        jump QuestionFive    
+    "I think I've I asked all the questions I wanted to ask!":
+        jump NapsterConclusion
+label QuestionOne:
+
+    
+         jump Questionaaire
+  # jump Grokster        
+
+m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
+jump Questionaaire
+
+
+label QuestionOne:   
         jump QuestionFive  
         
 label QuestionOne:    
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
+
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -173,13 +214,18 @@ label QuestionFour:
 
 label QuestionFive:
     m "Instead of Napster I started using Grokster’s Swaptor application.  It made it easy for me to quickly do the stuff I used to do on Napster with Grokster.  Though I heard they got sued too, so I’m not sure what’s next…"
-    "Alright! Thanks for your help!"
-    m "Uh... yeah sure..."
-    hide m
-    jump NapsterConclusion
+    
+    jump Questionaaire
     
 label NapsterConclusion:
+    
+    i "Alright! Thanks for your help!"
+    m "Uh... yeah sure...weirdo"
+    
     scene blankpage
+    with dissolve
+    stop music fadeout 1.0
+    play music "Pokemon Ruby-Sapphire-Emerald- Littleroot Town.mp3"
     "Well I better put together my research on the Napster case...\n"
     
     "1. Case was decided in US District Court in 2000 against Napster."
@@ -194,14 +240,15 @@ label NapsterConclusion:
     "8. Napster ends up declaring bankruptcy in 2002."
     
     scene saving
-    "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
-    "I guess the first place I’ll start is the internet to get some background"
+    with dissolve
+    i"Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
+    i"I guess the first place I’ll start is the internet to get some background"
     jump Grokster
-    
+
 
 label Grokster: 
         scene weke
-        i "Hmm this looks like a good website"
+        i "Hmm this looks like a good website.....I think"
         
         scene computer
         i "Found out Grokster and StreamCast Networks were two companies that offered similar p2p services"
@@ -213,7 +260,87 @@ label Grokster:
         i "Hmm even though the lower courts ruled in favor of these companies, they lost once they reached the Supreme Court.  I guess I should look at the opinions of all the judges then"
         
         scene courtroom
+        with dissolve
+        stop music fadeout 1.0
+        play music "Date A Live OST - 04 - DAL Pancake.mp3"
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
+
+ #       jump Opinions        
+
+        jump Opinions        
         
+        
+label Opinions:
+menu: 
+        "Justice Souter": 
+                 jump Souter
+        "Justices Ginsburg, Rehnquist, and Kennedy":
+                  jump Ginsburg
+        "Justices Breyer, Stevens, and O’Connor":
+                 jump Breyer
+        "Done asking all the judges": 
+                 jump doneOpinions 
+        
+        
+        
+label Souter: 
+         "Justice Souter had the main opinion so let’s see what he had to say"
+         show souter
+         "Justice Souter:" "First , the lower courts had misapplied the Sony rulings.  Grokster and StreamCast are not protected by that ruling."
+         "Justice Souter:" "Grokster and StreamCast knew that most of their downloads were from copyrighted material"
+         "Justice Souter:" "They even tried to induce their users to freely infringe through their services"
+         "Justice Souter:" "The fact that they both had a commercial goal by trying to tap into Napster’s old customer base clearly reflects their intentions"
+         "Justice Souter:" "In addition neither company also took any real initiative to tackle the infringing activities"
+         "Justice Souter:" "Thus, Grokster and StreamCast are held liable for their actions"
+         hide souter
+         jump Opinions
+        
+label Ginsburg: 
+        i "Let’s see what Justice’s Ginsburg’s opinion was"
+        show ginsburg
+        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justis Ginsburg:" "The lower courts erred in taking a few examples of legal use of the services to conclude that Grokster and StreamCast are protected under Sony"
+        "Justis Ginsburg:" "In addition, the lower courts also focused too much on deciding the legality of the technology when instead they should have debated the legality of the services themselves."
+        "Justis Ginsburg:" "Thus Grokster and StreamCast are held liable for the infringing acts of users. In addition, the Sony decision should be more strictly applied going forward."
+        hide ginsburg
+        jump Opinions
+        
+label Breyer: 
+        i "Hmm, I wonder what Justis Breyer had to say…"
+        show breyer
+        "Justis Breyer:" "Justice Ginsburg and Justice Souter are correct in finding Grokster and StreamCast liable for contributory infringement.  However, this only because Grokster and StreamCast induced their users to commit to the copyright infringement"
+        "Justis Breyer:" "Even though only 10\% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+        "Justis Breyer:" "There is no concrete reason to interpret and apply the outcome of the Sony case more strictly than  before."
+        "Justis Breyer:" "As a result, Grokster and Streamcast are held liable for their actions and the actions of their users."
+        hide breyer
+        jump Opinions
+
+
+label doneOpinions:   
+    i "This is a lot of great information, let’s see how I can sum it up!"
+    i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
+    i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
+<<<<<<< HEAD
+    scene published 
+    with dissolve
+    i "We are done with our research!"
+    "Now that you've finished your research you begin to work on the paper"
+    "You finish the paper and hand it to the boss"
+    "A few days later you see that your paper has been published and it's a smashing success!"
+    "The end....for now"
+=======
+    scene published
+    i "We are done with our research!"
+        
+        
+        
+        
+        
+        
+>>>>>>> 6573fb541d0731a7360e728ab65493d2fba23f5f
+    
+        
+
 
     

@@ -1,0 +1,18 @@
+﻿
+Ren'Py 6.99.7.858 lint report, generated at: Fri Nov  6 00:56:09 2015
+
+game/script.rpy:191 The image tag 'm' is not the prefix of a declared image, nor was it used in a show statement before this hide statement.
+
+
+Statistics:
+
+The game contains 79 dialogue blocks, containing 1,313 words and 7,618
+characters, for an average of 16.6 words and 96 characters per block.
+
+The game contains 4 menus, 23 images, and 12 screens.
+
+
+Remember to set config.developer to False before releasing.
+
+Lint is not a substitute for thorough testing. Remember to update Ren'Py
+before releasing. New releases fix bugs and improve compatibility.
