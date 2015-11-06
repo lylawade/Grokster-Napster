@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Thu Nov 05 19:21:22 2015
 Windows-8-6.2.9200
 Ren'Py 6.99.7.858
@@ -26,11 +27,41 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
 Prepare screens took 0.05s
+=======
+Tue Nov  3 20:20:22 2015
+Linux-3.16.0-51-generic-x86_64-with-debian-jessie-sid
+Ren'Py 6.99.7.858
+ 
+
+Bootstrap to the start of init.init took 0.04s
+Early init took 0.00s
+Loader init took 0.00s
+Loading error handling took 0.01s
+Loading script took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.02s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.02s
+>>>>>>> origin/master
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.00s
+<<<<<<< HEAD
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1641, in make_draw
@@ -41,13 +72,21 @@ Traceback (most recent call last):
     # This file was automatically generated from renpy/gl/gltexture.pyx
 ImportError: No module named gl
 Unknown renderer: angle
+=======
+>>>>>>> origin/master
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
 Vendor: 'NVIDIA Corporation'
+<<<<<<< HEAD
 Renderer: 'GeForce GT 650M/PCIe/SSE2'
 Version: '4.5.0 NVIDIA 347.88'
 Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+=======
+Renderer: 'GeForce GTX 770/PCIe/SSE2'
+Version: '4.5.0 NVIDIA 346.96'
+Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680, 65280, 255, 0), 'current_h': 1080, 'current_w': 5760, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+>>>>>>> origin/master
 Extensions:
     
     GL_AMD_multi_draw_indirect
@@ -274,6 +313,10 @@ Extensions:
     GL_EXT_vertex_array
     GL_EXT_vertex_array_bgra
     GL_EXT_vertex_attrib_64bit
+<<<<<<< HEAD
+=======
+    GL_EXT_x11_sync_object
+>>>>>>> origin/master
     GL_IBM_rasterpos_clip
     GL_IBM_texture_mirrored_repeat
     GL_KHR_blend_equation_advanced
@@ -348,6 +391,10 @@ Extensions:
     GL_NV_transform_feedback
     GL_NV_transform_feedback2
     GL_NV_uniform_buffer_unified_memory
+<<<<<<< HEAD
+=======
+    GL_NV_vdpau_interop
+>>>>>>> origin/master
     GL_NV_vertex_array_range
     GL_NV_vertex_array_range2
     GL_NV_vertex_attrib_integer_64bit
@@ -363,8 +410,11 @@ Extensions:
     GL_SGIX_depth_texture
     GL_SGIX_shadow
     GL_SUN_slice_accum
+<<<<<<< HEAD
     GL_WIN_swap_hint
     WGL_EXT_swap_control
+=======
+>>>>>>> origin/master
 Number of texture units: 4
 Using shader environment.
 Using copy RTT.
@@ -377,6 +427,7 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
+<<<<<<< HEAD
 Total time until interface ready: 0.891999959946s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
@@ -385,3 +436,20 @@ Total time until interface ready: 0.891999959946s
 - Frame drawn at 0.116000 seconds.
 - Frame drawn at 0.133000 seconds.
 - 0.133000 seconds to render 5 frames.
+=======
+Total time until interface ready: 0.697381973267s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.016606 seconds.
+- Frame drawn at 0.032961 seconds.
+- Frame drawn at 0.049941 seconds.
+- Frame drawn at 0.066374 seconds.
+- 0.066374 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.02s
+Running _start took 0.00s
+>>>>>>> origin/master
