@@ -11,29 +11,19 @@ image campus = "collegecampus.jpg"
 
 image judge = "judge.png"
 image boss = "boss.png"
-<<<<<<< HEAD
-=======
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
 
 image judy = "judgejudy.png"
 
-<<<<<<< HEAD
-=======
 image makina1 = "makina1.png" 
-image makina2 = "makina2.png"
 
->>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi',color="#ff3333")
 define m = Character('Makina',color="ffcc33")
@@ -137,20 +127,18 @@ label CollegeCampus:
         scene campus
         i "hmm lets see....."
         i "Oh that person looks like they've used Napster before!"
-        "You pull aside an innocent looking girl and decide to interrogate her"
+        "you pull aside an innocent looking girl and decide to interrogate her"
         show makina1
-        m "whaaa??"
+        m "fuehh??"
         i "So do you know anything about Napster??"
-        hide makina1
-        show makina2
-        m "Oh Napster? I loved Napster!!!"
-        i "What did you use it for?"
-        m "Downloading freeeeee music of course!"
+        m "ummmmm I guess?"
+        i "so what did you use it for?"
+        m "d-downloading music I guesssss"
         i "and did you know that was illegal"
-        m "S-sort of but everyone was doing it"
+        m "s-sort of but everyone was doing it"
         i "how much of your music was illegally downloaded would you say"
         m "I don't remember....like 90\%??"
-        "After interviewing other students, you find that the ones that knew about and used Napster said that most of their music was illegally downloaded"
+        "After interviewing other students, you find that the ones that knew about and used napster said that most of their music was illegally downloaded"
         
     
     

@@ -7,6 +7,10 @@ image courtroom = "courtroom.jpg"
 image desk = "messydesk.jpg"
 image library = "library.jpg"
 image dorm="dorm.jpg"
+<<<<<<< HEAD
+=======
+image campus = "collegecampus.jpg"
+>>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 
 image judge = "judge.png"
 image boss = "boss.png"
@@ -15,6 +19,7 @@ image kurumi = "kurumi.png"
 image kurumi_2 = "kurumi2.png"
 image lawBook = "lawbook.png"
 
+<<<<<<< HEAD
 =======
 image tswift = "tswift.png"
 image lawStudent = "lawStudent.png"
@@ -26,6 +31,23 @@ image judy = "judgejudy.png"
 >>>>>>> 130e6c1f6677f7fcbc3245b47189cc10adc43af1
 define i = Character('Me', color="#c8c8ff")
 define k =Character('Kurumi')
+=======
+image kurumi = "kurumi.png"
+image kurumi_2 = "kurumi2.png"
+image lawBook = "lawbook.png"
+
+
+image tswift = "tswift.png"
+image lawStudent = "lawStudent.png"
+
+image judy = "judgejudy.png"
+
+image makina1 = "makina1.png" 
+
+define i = Character('Me', color="#c8c8ff")
+define k =Character('Kurumi',color="#ff3333")
+define m = Character('Makina',color="ffcc33")
+>>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
                                        
 label start:
     play music "Shirobako OST Ending 2- Platinum Jet Instrumental.mp3"
@@ -99,10 +121,19 @@ menu:
         
 
 label FairUse:
+<<<<<<< HEAD
 
 label BetaMax:
 
 
+=======
+    k "Fair Use is based on four main principles " 
+    jump KurumiMenu
+
+label BetaMax:
+    k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
+    jump KurumiMenu
+>>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
 
 label SearchBooksScene:
 
@@ -116,9 +147,33 @@ label DormRoomScene:
     i "Thanks for the info Kurumi, see you tomorrow, maybe"
     scene dorm
     i "After an exhausting day I think it's time to go to bed"
+<<<<<<< HEAD
         
     
     
     
+=======
+    with dissolve
+    scene dorm
+    "it's morning and you decide to go to campus and ask other students if they remember napster"
+    
+label CollegeCampus:
+        scene campus
+        i "hmm lets see....."
+        i "Oh that person looks like they've used Napster before!"
+        "you pull aside an innocent looking girl and decide to interrogate her"
+        show makina1
+        m "fuehh??"
+        i "So do you know anything about Napster??"
+        m "ummmmm I guess?"
+        i "so what did you use it for?"
+        m "d-downloading music I guesssss"
+        i "and did you know that was illegal"
+        m "s-sort of but everyone was doing it"
+        i "how much of your music was illegally downloaded would you say"
+        m "I don't remember....like 90\%??"
+        "After interviewing other students, you find that the ones that knew about and used napster said that most of their music was illegally downloaded"
+        
+>>>>>>> fd98b47fbb96be73b3a48b9dfa52a95a25ffc718
     
     
