@@ -1,21 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 139, in script
-    m "I don't remember....like 90%??"
-ValueError: unsupported format character '?' (0x3f) at index 28
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+ScriptError: could not find label 'dormRoomScene'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 139, in script
-    m "I don't remember....like 90%??"
-  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 603, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\exports.py", line 1028, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character '?' (0x3f) at index 28
+  File "game/script.rpy", line 71, in script
+    jump dormRoomScene
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 1512, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'dormRoomScene'.
 
-Windows-8-6.2.9200
+Linux-3.19.0-31-generic-x86_64-with-debian-jessie-sid
 Ren'Py 6.99.7.858
 Napster-Grokster 0.0
