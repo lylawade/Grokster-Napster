@@ -1,77 +1,77 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' 'intern.png'>:
-  File "game/script.rpy", line 21, in script
-    i "Oh! Hi Boss!"
-IOError: Couldn't find file 'intern.png'.
+While loading <'Image' 'kurumi.jpg'>:
+  File "game/script.rpy", line 69, in script
+    k "You mean Sony Corporation of America v. Universal City Studios, Inc? I know everything there is to know about the case, so ask away!"
+IOError: Couldn't find file 'kurumi.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 21, in script
-    i "Oh! Hi Boss!"
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ast.py", line 603, in execute
+  File "game/script.rpy", line 69, in script
+    k "You mean Sony Corporation of America v. Universal City Studios, Inc? I know everything there is to know about the case, so ask away!"
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 603, in execute
     renpy.exports.say(who, what, interact=self.interact)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/exports.py", line 1036, in say
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\exports.py", line 1036, in say
     who(what, interact=interact)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/character.py", line 826, in __call__
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 826, in __call__
     self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/character.py", line 688, in do_display
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 688, in do_display
     **display_args)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/character.py", line 491, in display_say
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\character.py", line 491, in display_say
     rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/ui.py", line 277, in interact
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ui.py", line 277, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/core.py", line 2354, in interact
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 2354, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/core.py", line 2691, in interact_core
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 2691, in interact_core
     self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/core.py", line 1788, in draw_screen
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1788, in draw_screen
     renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 394, in renpy.display.render.render_screen (gen/renpy.display.render.c:6190)
+  File "renpy/display/render.pyx", line 394, in renpy.display.render.render_screen (gen\renpy.display.render.c:6190)
     rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/layout.py", line 650, in render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
     surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
     cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/layout.py", line 650, in render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
     surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
     cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/layout.py", line 650, in render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
     surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
     cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen/renpy.display.accelerator.c:1904)
+  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1904)
     cr = render(child, widtho, heighto, st - self.child_st_base, at)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/image.py", line 219, in render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\image.py", line 219, in render
     return wrap_render(self.target, width, height, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/image.py", line 90, in wrap_render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\image.py", line 90, in wrap_render
     rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
     cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/im.py", line 478, in render
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 478, in render
     im = cache.get(self)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/im.py", line 200, in get
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 200, in get
     surf = image.load()
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/display/im.py", line 529, in load
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 529, in load
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "/home/lyla/Programs/renpy-6.99.7-sdk/renpy/loader.py", line 533, in load
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\loader.py", line 533, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'intern.png'.
+IOError: Couldn't find file 'kurumi.jpg'.
 
-Linux-3.19.0-31-generic-x86_64-with-debian-jessie-sid
+Windows-8-6.2.9200
 Ren'Py 6.99.7.858
 Napster-Grokster 0.0
