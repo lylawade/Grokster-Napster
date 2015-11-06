@@ -237,6 +237,8 @@ menu:
                   jump Ginsburg
         "Justices Breyer, Stevens, and O’Connor":
                  jump Breyer
+        "Done asking all the judges": 
+                jump doneOpinions 
         
         
         
@@ -274,7 +276,13 @@ label Breyer:
         jump Opinions
 
         
-
+label doneOpinions:   
+    i "This is a lot of great information, let’s see how I can sum it up!"
+    i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
+    i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
+    
+    
+    
     
     
 label endScene:

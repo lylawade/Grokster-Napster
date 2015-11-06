@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 246: indentation mismatch.
+File "game/script.rpy", line 240: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Done asking all the judges" 
+                                 ^
 
 Ren'Py Version: Ren'Py 6.99.7.858
