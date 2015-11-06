@@ -1,22 +1,21 @@
-<<<<<<< HEAD
-Thu Nov 05 19:21:22 2015
+Thu Nov 05 19:41:55 2015
 Windows-8-6.2.9200
 Ren'Py 6.99.7.858
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.02s
-Loader init took 0.01s
+Loader init took 0.02s
 Loading error handling took 0.02s
 Loading script took 0.11s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
+Running init code took 0.07s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Example John\\AppData\\Roaming/RenPy/backups\\Grokster-Napster':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Creating interface object took 0.02s
@@ -27,41 +26,11 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.04s
 Prepare screens took 0.05s
-=======
-Tue Nov  3 20:20:22 2015
-Linux-3.16.0-51-generic-x86_64-with-debian-jessie-sid
-Ren'Py 6.99.7.858
- 
-
-Bootstrap to the start of init.init took 0.04s
-Early init took 0.00s
-Loader init took 0.00s
-Loading error handling took 0.01s
-Loading script took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.02s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Creating interface object took 0.25s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.02s
->>>>>>> origin/master
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.00s
-<<<<<<< HEAD
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1641, in make_draw
@@ -72,21 +41,13 @@ Traceback (most recent call last):
     # This file was automatically generated from renpy/gl/gltexture.pyx
 ImportError: No module named gl
 Unknown renderer: angle
-=======
->>>>>>> origin/master
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
 Vendor: 'NVIDIA Corporation'
-<<<<<<< HEAD
 Renderer: 'GeForce GT 650M/PCIe/SSE2'
 Version: '4.5.0 NVIDIA 347.88'
 Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
-=======
-Renderer: 'GeForce GTX 770/PCIe/SSE2'
-Version: '4.5.0 NVIDIA 346.96'
-Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680, 65280, 255, 0), 'current_h': 1080, 'current_w': 5760, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
->>>>>>> origin/master
 Extensions:
     
     GL_AMD_multi_draw_indirect
@@ -313,10 +274,6 @@ Extensions:
     GL_EXT_vertex_array
     GL_EXT_vertex_array_bgra
     GL_EXT_vertex_attrib_64bit
-<<<<<<< HEAD
-=======
-    GL_EXT_x11_sync_object
->>>>>>> origin/master
     GL_IBM_rasterpos_clip
     GL_IBM_texture_mirrored_repeat
     GL_KHR_blend_equation_advanced
@@ -391,10 +348,6 @@ Extensions:
     GL_NV_transform_feedback
     GL_NV_transform_feedback2
     GL_NV_uniform_buffer_unified_memory
-<<<<<<< HEAD
-=======
-    GL_NV_vdpau_interop
->>>>>>> origin/master
     GL_NV_vertex_array_range
     GL_NV_vertex_array_range2
     GL_NV_vertex_attrib_integer_64bit
@@ -410,11 +363,8 @@ Extensions:
     GL_SGIX_depth_texture
     GL_SGIX_shadow
     GL_SUN_slice_accum
-<<<<<<< HEAD
     GL_WIN_swap_hint
     WGL_EXT_swap_control
-=======
->>>>>>> origin/master
 Number of texture units: 4
 Using shader environment.
 Using copy RTT.
@@ -427,29 +377,77 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-<<<<<<< HEAD
-Total time until interface ready: 0.891999959946s
+Total time until interface ready: 0.904000043869s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.101000 seconds.
-- Frame drawn at 0.103000 seconds.
-- Frame drawn at 0.116000 seconds.
-- Frame drawn at 0.133000 seconds.
-- 0.133000 seconds to render 5 frames.
-=======
-Total time until interface ready: 0.697381973267s
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016606 seconds.
-- Frame drawn at 0.032961 seconds.
-- Frame drawn at 0.049941 seconds.
-- Frame drawn at 0.066374 seconds.
-- 0.066374 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.02s
-Running _start took 0.00s
->>>>>>> origin/master
+- Frame drawn at 0.088000 seconds.
+- Frame drawn at 0.090000 seconds.
+- Frame drawn at 0.090000 seconds.
+- Frame drawn at 0.105000 seconds.
+- 0.105000 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\execution.py", line 388, in run
+    node.execute()
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ast.py", line 805, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\python.py", line 1460, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
+    $ ui.interact()
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 2354, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 2691, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1788, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 394, in renpy.display.render.render_screen (gen\renpy.display.render.c:6190)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\screen.py", line 610, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\layout.py", line 1025, in render
+    back = render(style.background, bw, bh, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 478, in render
+    im = cache.get(self)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 200, in get
+    surf = image.load()
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\im.py", line 529, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\loader.py", line 533, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'Title.png'.
