@@ -164,17 +164,11 @@ menu:
     "Do you know what happened to Napster?":    
         jump QuestionFour
     "What do you use now instead of Napster?":
-        jump QuestionFive    
-label QuestionOne:
-<<<<<<< HEAD
-    
-         jump Questionaaire
-  #    jump Grokster        
-   
-=======
+        jump QuestionFive  
+        
+label QuestionOne:    
     m "This is anonymous right?? I think about 80\% of the music I used to get off Napster wasn’t legal."
     jump Questionaaire
->>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
 
 label QuestionTwo:
     m "Oh space shifting? That's when you store music on a server from one device and then access on it another device.\nI did use Napster for that, but instead of just holding onto my music and accessing it from everywhere, I could get music from other people!"
@@ -215,7 +209,6 @@ label NapsterConclusion:
     "I guess the first place I’ll start is the internet to get some background"
     jump Grokster
     
-<<<<<<< HEAD
 
 label Grokster: 
         scene weke
@@ -232,23 +225,8 @@ label Grokster:
         
         scene courtroom
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
- #       jump Opinions        
         
-        
-#label Opinions:
-#menu: 
-#        "Justice Souter": 
-        
-        
-        
-        
-        
-        
-        
-    
-=======
-label Grokster:
->>>>>>> 38f3ccd071ea58ce7f43fe45f10f1a56505469fc
+
     
     
 label endScene:
