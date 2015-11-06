@@ -43,7 +43,7 @@ label start:
     
     scene building
     
-    "There you are!"
+    "Boss""There you are!"
     
     scene desk
     show boss
@@ -89,39 +89,45 @@ label KurumiScene:
         k "You mean Sony Corporation of America v. Universal City Studios, Inc? I know everything there is to know about the case, so ask away!"
         i "Wow well I guess my first question would be what is the basis of the case?"
         k "Well the basis of the case was whether or not Sony's Betamax infringed upon copyrighted works by allowing users to record copyrighted works"
-        k "Sony sought money damages and an equitable accounting of profits from Universal Studios and petitioners, as well as an injunction against the manufacture and marketing of Betamax VTRs" 
-        k "Sony argued that the recording capabilities of the Betamax was well within Fair Use"
-        k "The Supreme Court concured with Sony in that the Betamax was within Fair Use and that the Betamax itself had substantial noninfringing potential"
+        k "Respondents sought money damages and an equitable accounting of profits from petitioners, as well as an injunction against the manufacture and marketing of Betamax VTRs" 
+        k "Sony argued that the recording capabilities of the Betamax was well within Fair Use and that capabilities did not constitute copyright infringement"
+        k "The Supreme Court concurred with the decision of the District Court in that Sony in that the Betamax was within Fair Use and that the Betamax itself had substantial noninfringing potential"
 
 label KurumiMenu:
 menu:
     "Ask Kurumi about Fair use":
         jump FairUse
-    "Ask Kurumi about the Betamax's noninfringing potential":
+    "Ask Kurumi about the Betamax and it's noninfringing potential":
         jump BetaMax
+    "Search for books on the Sony case":
+        jump KurumiSearchBooksScene
     "I think I've got enough information!":
         jump KurumiDormRoomScene
         
 
 label FairUse:
     k "Fair Use is based on four main principles " 
+    k "The purpose and character of the use"
+    k "Nature of the copyrighted work"
+    k"Amount and substantiality"
+    k"The effect of the use upon the work's value"
   
     jump KurumiMenu
 
 label BetaMax:
-    k "The court found that the Betamax had many noninfringing potential such as Edcuational purposes"
-  
-
-    k "Fair Use is based on four main principles: " 
+    k "The District Court found that respondents failed to demonstrate harm to the market for their copyrighted works "
+    k "The District Court also found that the Betamax had substantial noninfringing potential"
+    k " An injunction to prevent the production of the Betamax would deprive the public of the ability to use the Betamax for noninfringing purposes "
+    
     jump KurumiMenu
-
-label BetaMax:
-    k "The court found that the Betamax had many non-infringing use potential (such as educational purposes)."
-    jump KurumiMenu
-
+label KurumiSearchBooksScene:
+    i "Thanks for the info Kurumi, see you tomorrow! maybe"
+    hide kurumi_2
+    jump SearchBooksScene
+    
 label SearchBooksScene:
 
-      "After searching a while you find a book that perfectly describes Sony Corporation of America v. Universal City Studios, Inc."
+      "After searching a while you find a book that perfectly explains Sony Corporation of America v. Universal City Studios, Inc."
       show lawBook
       i "Wow this book literally has what I'm looking for!"
       hide lawBook
@@ -132,8 +138,10 @@ label SearchBooksScene:
 
 
 label KurumiDormRoomScene:
+    
     i "Thanks for the info Kurumi, see you tomorrow, maybe!"
-    jump ResearchMenu
+    
+    jump DormRoomScene
 
 label DormRoomScene:
     scene dorm
@@ -232,14 +240,15 @@ label NapsterConclusion:
     "8. Napster ends up declaring bankruptcy in 2002."
     
     scene saving
-    "Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
-    "I guess the first place I’ll start is the internet to get some background"
+    with dissolve
+    i"Alright that looks great! Let me get started on the meat of this story, the Grokster and Streamcast Supreme Court ruling!"
+    i"I guess the first place I’ll start is the internet to get some background"
     jump Grokster
 
 
 label Grokster: 
         scene weke
-        i "Hmm this looks like a good website"
+        i "Hmm this looks like a good website.....I think"
         
         scene computer
         i "Found out Grokster and StreamCast Networks were two companies that offered similar p2p services"
@@ -251,6 +260,9 @@ label Grokster:
         i "Hmm even though the lower courts ruled in favor of these companies, they lost once they reached the Supreme Court.  I guess I should look at the opinions of all the judges then"
         
         scene courtroom
+        with dissolve
+        stop music fadeout 1.0
+        play music "Date A Live OST - 04 - DAL Pancake.mp3"
         i "This looks interesting, there seems to be three main opinions.  Who should I start with first?"
 
  #       jump Opinions        
@@ -309,19 +321,15 @@ label doneOpinions:
     i "This is a lot of great information, let’s see how I can sum it up!"
     i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
     i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
-    scene published
+    scene published 
+    with dissolve
     i "We are done with our research!"
-        
-        
-        
-        
-        
-        
+    "Now that you've finished your research you begin to work on the paper"
+    "You finish the paper and hand it to the boss"
+    "A few days later you see that your paper has been published and it's a smashing success!"
+    "The end....for now"
     
+        
 
-    
-    
-label endScene:
-scene desk
 
     

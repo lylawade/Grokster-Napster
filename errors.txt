@@ -2,22 +2,8 @@
 errors listed below, and try again.
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-File "game/script.rpy", line 240: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Done asking all the judges" 
-                                 ^
-=======
-<<<<<<< HEAD
-File "game/script.rpy", line 173: indentation mismatch.
-=======
-File "game/script.rpy", line 246: indentation mismatch.
->>>>>>> 30048af14e105de225bb2d44ba2ab3617ffedf19
->>>>>>> 5c27c6f7cea61d463c3057cd75142ebf487f9a50
-=======
-File "game/script.rpy", line 211: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    m "Uh... yeah sure...weirdo"
-    ^
->>>>>>> 00b6b168ad451f3b9ed56d2cfc05d24853e1764c
+File "game/script.rpy", line 256: expected end of line
+    stop music fade 1.0
+               ^
 
 Ren'Py Version: Ren'Py 6.99.7.858
