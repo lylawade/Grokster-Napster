@@ -298,21 +298,21 @@ label Souter:
 label Ginsburg: 
         i "Let’s see what Justice’s Ginsburg’s opinion was"
         show ginsburg
-        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
-        "Justis Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
-        "Justis Ginsburg:" "The lower courts erred in taking a few examples of legal use of the services to conclude that Grokster and StreamCast are protected under Sony"
-        "Justis Ginsburg:" "In addition, the lower courts also focused too much on deciding the legality of the technology when instead they should have debated the legality of the services themselves."
-        "Justis Ginsburg:" "Thus Grokster and StreamCast are held liable for the infringing acts of users. In addition, the Sony decision should be more strictly applied going forward."
+        "Justice Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justice Ginsburg:" "I’m going to be honest, the Sony case does not protect these companies in this situation regardless of whether Grokster nor StreamCast induced their customers or not"
+        "Justice Ginsburg:" "The lower courts erred in taking a few examples of legal use of the services to conclude that Grokster and StreamCast are protected under Sony"
+        "Justice Ginsburg:" "In addition, the lower courts also focused too much on deciding the legality of the technology when instead they should have debated the legality of the services themselves."
+        "Justice Ginsburg:" "Thus Grokster and StreamCast are held liable for the infringing acts of users. In addition, the Sony decision should be more strictly applied going forward."
         hide ginsburg
         jump Opinions
         
 label Breyer: 
-        i "Hmm, I wonder what Justis Breyer had to say…"
+        i "Hmm, I wonder what Justice Breyer had to say…"
         show breyer
-        "Justis Breyer:" "Justice Ginsburg and Justice Souter are correct in finding Grokster and StreamCast liable for contributory infringement.  However, this only because Grokster and StreamCast induced their users to commit to the copyright infringement"
-        "Justis Breyer:" "Even though only 10\% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
-        "Justis Breyer:" "There is no concrete reason to interpret and apply the outcome of the Sony case more strictly than  before."
-        "Justis Breyer:" "As a result, Grokster and Streamcast are held liable for their actions and the actions of their users."
+        "Justice Breyer:" "Justice Ginsburg and Justice Souter are correct in finding Grokster and StreamCast liable for contributory infringement.  However, this only because Grokster and StreamCast induced their users to commit to the copyright infringement"
+        "Justice Breyer:" "Even though only 10\% of the files were not copyrighted material, that in and of itself is enough to meet the benchmark set by Sony."
+        "Justice Breyer:" "There is no concrete reason to interpret and apply the outcome of the Sony case more strictly than  before."
+        "Justice Breyer:" "As a result, Grokster and Streamcast are held liable for their actions and the actions of their users."
         hide breyer
         jump Opinions
 
@@ -321,7 +321,7 @@ label doneOpinions:
     i "This is a lot of great information, let’s see how I can sum it up!"
     i "Lower court rulings were overturned and Grokster & StreamCast were found liable for contributory infringement"
     i "Grokster and StreamCast both knew about the illegal actions of their users, but never took any real initiative to stop such activities."
-<<<<<<< HEAD
+
     scene published 
     with dissolve
     i "We are done with our research!"
@@ -329,16 +329,15 @@ label doneOpinions:
     "You finish the paper and hand it to the boss"
     "A few days later you see that your paper has been published and it's a smashing success!"
     "The end....for now"
-=======
-    scene published
-    i "We are done with our research!"
+
+
         
         
         
         
         
         
->>>>>>> 6573fb541d0731a7360e728ab65493d2fba23f5f
+
     
         
 
