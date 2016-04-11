@@ -1,35 +1,35 @@
-Sun Nov 15 20:47:20 2015
+Mon Apr 11 02:29:26 2016
 Windows-8-6.2.9200
 Ren'Py 6.99.7.858
  
 
-Bootstrap to the start of init.init took 0.08s
-Early init took 0.05s
-Loader init took 0.02s
+Bootstrap to the start of init.init took 0.07s
+Early init took 0.02s
+Loader init took 0.03s
 Loading error handling took 0.02s
-Loading script took 0.06s
-Loading persistent took 0.01s
+Loading script took 0.08s
+Loading persistent took 0.02s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
+Running init code took 0.10s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.04s
+Creating interface object took 0.03s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.06s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.00s
+Interface start took 0.01s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\Example John\Documents\renpy-6.99.7-sdk\renpy\display\core.py", line 1641, in make_draw
@@ -42,17 +42,18 @@ ImportError: No module named gl
 Unknown renderer: angle
 
 Fullscreen mode.
-Screen sizes: virtual=(800, 600) physical=(1920, 1080) drawable=(1920, 1080)
+Screen sizes: virtual=(800, 600) physical=(1537, 865) drawable=(1537, 865)
 Vendor: 'NVIDIA Corporation'
 Renderer: 'GeForce GT 650M/PCIe/SSE2'
-Version: '4.5.0 NVIDIA 347.88'
-Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 1080, 'current_w': 1920, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
+Version: '4.5.0 NVIDIA 362.00'
+Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 864, 'current_w': 1536, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
 Extensions:
     
     GL_AMD_multi_draw_indirect
     GL_AMD_seamless_cubemap_per_texture
     GL_ARB_ES2_compatibility
     GL_ARB_ES3_1_compatibility
+    GL_ARB_ES3_2_compatibility
     GL_ARB_ES3_compatibility
     GL_ARB_arrays_of_arrays
     GL_ARB_base_instance
@@ -99,6 +100,7 @@ Extensions:
     GL_ARB_get_texture_sub_image
     GL_ARB_gpu_shader5
     GL_ARB_gpu_shader_fp64
+    GL_ARB_gpu_shader_int64
     GL_ARB_half_float_pixel
     GL_ARB_half_float_vertex
     GL_ARB_imaging
@@ -115,6 +117,7 @@ Extensions:
     GL_ARB_multitexture
     GL_ARB_occlusion_query
     GL_ARB_occlusion_query2
+    GL_ARB_parallel_shader_compile
     GL_ARB_pipeline_statistics_query
     GL_ARB_pixel_buffer_object
     GL_ARB_point_parameters
@@ -129,8 +132,11 @@ Extensions:
     GL_ARB_seamless_cube_map
     GL_ARB_seamless_cubemap_per_texture
     GL_ARB_separate_shader_objects
+    GL_ARB_shader_atomic_counter_ops
     GL_ARB_shader_atomic_counters
+    GL_ARB_shader_ballot
     GL_ARB_shader_bit_encoding
+    GL_ARB_shader_clock
     GL_ARB_shader_draw_parameters
     GL_ARB_shader_group_vote
     GL_ARB_shader_image_load_store
@@ -278,6 +284,7 @@ Extensions:
     GL_KHR_blend_equation_advanced
     GL_KHR_context_flush_control
     GL_KHR_debug
+    GL_KHR_no_error
     GL_KHR_robust_buffer_access_behavior
     GL_KHR_robustness
     GL_KTX_buffer_region
@@ -376,13 +383,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.82000017166s
+Total time until interface ready: 0.967000007629s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.055000 seconds.
-- Frame drawn at 0.056000 seconds.
-- Frame drawn at 0.364000 seconds.
-- Frame drawn at 0.364000 seconds.
-- 0.364000 seconds to render 5 frames.
-- Frame drawn at 0.365000 seconds.
-- 0.310000 seconds to render 5 frames.
+- Frame drawn at 0.058000 seconds.
+- Frame drawn at 0.060000 seconds.
+- Frame drawn at 0.071000 seconds.
+- Frame drawn at 0.088000 seconds.
+- 0.088000 seconds to render 5 frames.
